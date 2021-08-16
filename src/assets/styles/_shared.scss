@@ -1,0 +1,309 @@
+.is-fullwidth {
+  width: 100%;
+}
+.sourcesans-bold {
+  font-family: $family-sans-serif;
+  font-weight: 700;
+}
+.sourcesans-extrabold {
+  font-family: $family-sans-serif;
+  font-weight: 900;
+}
+
+.button {
+  border-radius: 0;
+}
+
+.button {
+  &.is-white {
+    border: 1px solid var(--blue);
+    transition: all 0.25s;
+    &:hover {
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: var(--blue);
+    }
+  }
+  &.is-primary {
+    transition: all 0.25s;
+    border: 1px solid #fff;
+    &:hover {
+      border: 1px solid var(--blue);
+      color: #000;
+      background-color: #fff;
+    }
+  }
+  &.is-primary:focus:not(:active),
+  &.is-primary.is-focused:not(:active) {
+    box-shadow: none;
+  }
+}
+
+.is-primary-txt {
+  color: $primary;
+}
+
+.is-hero-size {
+  @media screen and (min-width: 1024px) {
+    font-size: 15vw !important;
+    line-height: 0.8em !important;
+  }
+}
+
+.is-white-link,
+.is-white-txt {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h3 {
+  font-weight: 700;
+}
+
+#app {
+  font-family: $family-sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+
+.content-html {
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+.hero {
+  position: relative;
+  .hero-image {
+    max-height: 75vh;
+    min-height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    &.no-image {
+      height: 75vh; //using this now since we don't have images
+    }
+    img {
+      display: block;
+      width: 100%;
+      max-width: unset;
+    }
+  }
+  .hero-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    width: 50vw;
+    padding: 3rem 1rem;
+    padding-left: 4rem;
+
+    @media screen and (max-width: 750px) {
+      padding-left: 3.5rem;
+    }
+    @media screen and (max-width: 650px) {
+      padding-left: 2.6rem;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100vw !important;
+    }
+
+    .title {
+      font-size: 45px;
+      @media screen and (max-width: 750px) {
+        font-size: 40px;
+        line-height: 35px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 35px;
+        line-height: 28px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+        line-height: 35px;
+      }
+    }
+
+    .client-name {
+      @media screen and (max-width: 750px) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.VueCarousel {
+  width: 100vw;
+
+  .VueCarousel-slide {
+    position: relative;
+  }
+
+  .VueCarousel-pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto !important;
+
+    .VueCarousel-dot {
+      background: transparent !important;
+      border: 1px solid #fff;
+      padding: 0 !important;
+      margin: 10px;
+
+      &.VueCarousel-dot--active {
+        background-color: $primary !important;
+      }
+    }
+  }
+}
+
+.project-carousel-container {
+  .VueCarousel-inner {
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      .carousel-image {
+        max-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .VueCarousel-navigation {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: 100%;
+    .VueCarousel-navigation-button {
+      background: #000;
+      width: 45px;
+      height: 45px;
+      text-indent: -9999em;
+      opacity: 0.5;
+      &:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        left: 10px;
+        top: 28px;
+        transform: rotate(45deg);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        left: 10px;
+        top: 15px;
+        transform: rotate(-45deg);
+      }
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: $primary;
+        opacity: 1;
+      }
+      &.VueCarousel-navigation-next {
+        &:before {
+          transform: rotate(-45deg);
+          left: 13px;
+        }
+        &:after {
+          transform: rotate(45deg);
+          left: 13px;
+        }
+      }
+      &.VueCarousel-navigation-prev,
+      &.VueCarousel-navigation-next {
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+  }
+}
+
+.project-body {
+  h1,
+  h2,
+  h3,
+  h4 {
+    a {
+      .icon {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  p {
+    strong {
+      font-size: 32px;
+      color: $primary;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.video-container {
+  padding-bottom: calc(var(--aspect-ratio, 0.5625) * 100%);
+  iframe,
+  .object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+/* Paginiation style */
+.pager {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+
+  &__link {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+    &:hover:not(.active) {
+      background-color: var(--blue);
+      border-radius: 5px;
+      color: black;
+    }
+  }
+  .active {
+    background-color: var(--blue);
+    border-radius: 5px;
+  }
+}

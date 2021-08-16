@@ -1,0 +1,21 @@
+
+:root {
+	--blue: #0091d5;
+	--gray: #e3e3e3;
+	--lh: 2rem;
+}
+
+// Update Bulma's global variables
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$link: var(--blue);
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+$primary: var(--blue);
+
+// Update some of Bulma's component variables
+$body-background-color: #fff;
+$background: #fff;
+$control-border-width: 2px;
+$text-strong: #000;
+$input-border-color: transparent;
+$input-shadow: none;

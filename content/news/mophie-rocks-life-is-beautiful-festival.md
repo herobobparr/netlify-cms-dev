@@ -1,0 +1,15 @@
+---
+title: "mophie Rocks Life is Beautiful Festival"
+date: "2013-11-01"
+categories: 
+  - name: "news"
+tags: 
+  - name: "life-is-beautiful"
+  - name: "mophie"
+isFeatured: false
+featuredImage: ""
+---
+
+mophie rocked the Life is Beautiful Festival last weekend helping artists and fans stay powered and not missing a minute of the music!  mophie partnered with festival artists like Andrew McMahon, Brandon Flowers, Capital Cities, Empire of the Sun, Imagine Dragons, Joy Formidable, Passion Pit, Portugal the Man, Pretty Lights, Robert DeLong, The Killers, Twenty One Pilots, Vampire Weekend, Wallpaper, Wildcat Wildcat, Youngblood Hawke and ZZ Ward.  Check out all the photos [here](https://www.facebook.com/media/set/?set=a.10152004501383126.1073741834.100231583125&type=3)!
+
+[![644346_10152004514313126_906852683_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/644346_10152004514313126_906852683_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/644346_10152004514313126_906852683_n.jpg)[![1424470_10152004504628126_263536389_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1424470_10152004504628126_263536389_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1424470_10152004504628126_263536389_n.jpg) [![578046_10152004503258126_656149842_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/578046_10152004503258126_656149842_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/578046_10152004503258126_656149842_n.jpg) [![1390530_10152004510398126_1733452809_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1390530_10152004510398126_1733452809_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1390530_10152004510398126_1733452809_n.jpg) [![1390592_10152004513053126_1550850199_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1390592_10152004513053126_1550850199_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1390592_10152004513053126_1550850199_n.jpg) [![1378572_10152004508578126_334058095_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1378572_10152004508578126_334058095_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1378572_10152004508578126_334058095_n.jpg) [![1380483_10152004503613126_850735516_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1380483_10152004503613126_850735516_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1380483_10152004503613126_850735516_n.jpg) [![1380391_10152004510953126_1079185636_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1380391_10152004510953126_1079185636_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1380391_10152004510953126_1079185636_n.jpg) [![1454722_10152004506843126_1159448828_n](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1454722_10152004506843126_1159448828_n-150x150.jpg)](http://www.mirroredmedia.com/wp-content/uploads/2013/10/1454722_10152004506843126_1159448828_n.jpg)

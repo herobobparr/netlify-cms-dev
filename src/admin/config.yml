@@ -1,0 +1,167 @@
+backend:
+  name: github
+  repo: Mirrored-Media/mirrored-netlify-site
+
+publish_mode: editorial_workflow
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: mirrored-media
+    api_key: 329283493787783
+    output_filename_only: true
+
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Client Name', name: 'clientName', widget: 'string' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Featured On Homepage',
+          name: 'isFeatured',
+          widget: 'boolean',
+          default: true,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Header Carousel'
+        name: 'headerMedia'
+        widget: 'list'
+        fields: 
+          - { label: 'Image', name: 'img_src', widget: 'file' }
+          - { label: 'Hosted Video', name: 'hosted_video', widget: 'file' }
+          - { label: 'Youtube Video ID', name: 'youtube', widget: 'string' }
+          - { label: 'Vimeo Video ID', name: 'vimeo', widget: 'string' }
+      - label: 'Gallery Images'
+        name: 'galleryImages'
+        widget: 'list'
+        fields:
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: Caption, name: 'caption', widget: 'string', required: false }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Name',
+              name: 'name',
+              widget: 'relation',
+              collection: 'tags',
+              search_fields: ['tagName'],
+              display_fields: ['tagName'],
+              value_field: 'tagName',
+            }
+  - name: 'news'
+    label: 'News'
+    folder: 'content/news'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Featured On Homepage',
+          name: 'isFeatured',
+          widget: 'boolean',
+          default: true,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Name',
+              name: 'name',
+              widget: 'relation',
+              collection: 'tags',
+              search_fields: ['tagName'],
+              display_fields: ['tagName'],
+              value_field: 'tagName',
+            }
+  - name: 'tags'
+    label: 'Project and News Tags'
+    folder: 'content/tags'
+    create: true
+    fields:
+      - { label: 'Name', name: 'tagName', widget: 'string' }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file: 'content/pages/home.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - label: Hero Video Overlay
+            name: heroVideo
+            widget: object
+            fields:
+            - { label: Video, name: sizzlevideo, widget: file }
+            - { label: Image Overlay, name: sizzleimage, widget: file }
+          - label: Hero Images
+            name: heroImages
+            widget: list
+            fields:
+              - {
+                label: Featured Project,
+                name: featuredproject,
+                widget: relation,
+                collection: projects,
+                searchFields: ["title"],
+                displayFields: ["title"],
+                valueField: title,
+              }
+              - { label: 'Image', name: 'image', widget: 'image' }
+      - label: 'About Page'
+        name: 'about'
+        file: 'content/pages/about.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: 'Award Images', name: 'awardsimg', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Our Partners', name: 'partnersimg', widget: 'image' }
+      - label: 'Contact Page'
+        name: 'contact'
+        file: 'content/pages/contact.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Hero Images
+            name: heroImages
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: 'Image', name: 'image', widget: 'image' }
+      - label: 'Stay Safe Page'
+        name: 'staysafe'
+        file: 'content/pages/staysafe.md'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Body, name: body, widget: markdown }
+          - label: Hero Images
+            name: heroImages
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: 'Image', name: 'image', widget: 'image' }                            
+  - name: 'features'
+    label: 'Site Features'
+    files:
+      - label: 'Top Banner'
+        name: 'topbanner'
+        file: 'content/sitefeatures/topbanner.md'
+        fields:
+          - { label: Banner Text, name: bannertext, widget: string }
+          - { label: CTA Text, name: ctatext, widget: string }
+          - { label: 'Background Image', name: 'bgimage', widget: 'image' }
+          - { label: 'Link', name: 'link', widget: 'string' }
